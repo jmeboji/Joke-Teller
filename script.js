@@ -27,7 +27,7 @@ function tellMe(joke) {
 async function getJokes() {
     let joke = '';
 
-    apiUrl = 'https://sv443.net/jokeapi/v2/joke/Miscellaneous?blacklistFlags=racist,sexist';
+    apiUrl = 'https://sv443.net/jokeapi/v2/joke/Christmas?blacklistFlags=nsfw,racist';
     try {
         const response = await fetch(apiUrl);
         const data = await response.json();
